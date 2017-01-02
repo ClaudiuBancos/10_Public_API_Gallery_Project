@@ -1,0 +1,119 @@
+/******************************************************
+MOBILE DEVICES IN LANDSCAPE MODE
+*******************************************************/
+
+@media (orientation: landscape) {
+
+/*------------Lightbox Overlay------------*/
+
+	.display-image {
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5vh;
+	}
+
+	#overlay .display-image img {
+		width: auto;
+	}
+
+	#overlay .button {
+		max-width: 10%;
+		height: auto;
+	}
+
+	#overlay .back_button {
+		position: absolute;
+		left: 0;
+		top: 35vh;
+	}
+
+	#overlay .forward_button {
+		position: absolute;
+		right: 0;
+		top: 35vh;
+	}
+
+}
+
+@media (orientation: landscape) and (max-aspect-ratio: 10/7) {
+	#overlay .display-image {
+		margin-top: 12vh;
+	}
+}
+
+
+/******************************************************
+	TABLETS
+*******************************************************/
+
+
+
+@media (min-width: 700px) {
+	#overlay .display-image {
+		min-height: 40vh;
+		margin-bottom: 4vh;
+	}
+
+	#overlay .display-image img {
+		height: 40vh;
+		width: auto;
+	}
+
+	#overlay #text-div {
+		font-size: 20px;
+		max-width: 65%;
+		margin: auto;
+		text-align: left;
+		line-height: 26px;
+	}
+
+	#overlay .sprite {
+		width: 25%;
+		height: 25%;
+	}
+}
+
+
+/******************************************************
+	LARGE TABLETS AND DESKTOPS
+*******************************************************/
+
+
+@media (min-width: 1064px) {
+	#overlay .back_button {
+		margin-left: 5%;
+		margin-right: 0;
+	}
+
+	#overlay .forward_button {
+		margin-left: 0;
+		margin-right: 5%;
+	}
+
+	#content_container {
+		display: flex;
+		justify-content: center;
+	}
+
+	#overlay .display-image {
+		min-height: 70vh;
+		margin-left: 0;
+		margin-right: 40px;
+		margin-top: 10vh;
+	}
+
+
+	#overlay .display-image img {
+		height: 70vh;
+		width: auto;
+	}
+
+	#content_container #text-div {
+		max-width: 30%;
+		font-size: 24px;
+		margin-right: 0;
+		margin-left: 0;
+		margin-top: 10vh;
+	}
+}
